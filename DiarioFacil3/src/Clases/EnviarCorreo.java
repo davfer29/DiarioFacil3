@@ -31,9 +31,9 @@ public class EnviarCorreo {
         if(con.enviarCorreo(c)){
         
             
-            JOptionPane.showMessageDialog(null, "Envio exitoso");
+            System.out.println("Envio exitoso");
     }else{
-             JOptionPane.showMessageDialog(null, "Error");
+            System.out.println("Error");
         }
     
     }
