@@ -57,7 +57,7 @@ public class Controlador {
             
             
             Transport t = s.getTransport("smtp");
-            t.connect(c.getUsuarioCorreo(),c.getContrasenna());
+            t.connect("587", c.getUsuarioCorreo(), c.getContrasenna());
             t.sendMessage(mensaje, mensaje.getAllRecipients());
             t.close();
             return true;
